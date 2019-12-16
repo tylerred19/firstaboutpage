@@ -189,8 +189,3 @@ body {
     filter: brightness(45%);
     color: #f7c705;
 }
-
-.img-blur {
-  transition: 1s;
-  filter: brightness(25%);
-}
