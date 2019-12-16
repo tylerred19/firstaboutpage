@@ -1,7 +1,6 @@
 /* Master styles */
 body {
     margin: 0px;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 .container {
@@ -33,7 +32,7 @@ body {
 
 .nav-link-wrapper {
     height: 22px;
-    border-bottow: 1px solid transparent;
+    border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;
 }
 
@@ -59,33 +58,28 @@ body {
     color: black !important;
 }
 
-/* Portfolio styles, grid */
+/* Portfolio styles */
 
 .portfolio-items-wrapper {
-  display: grid;
-  grid-template-rows: repeat(6, 1fr);
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 5px;
-  background-color: grey;
-  padding: 5px;
-  color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
+.portfolio-item-wrapper {
+    position: relative;
+}
 
-/*
 .portfolio-img-background {
-    height: 100%;
+    height: 350px;
     width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-*/
 
-/*
 .img-text-wrapper {
     position: absolute;
-    top: 100;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,103 +87,46 @@ body {
     height: 100%;
     text-align: center;
     padding-left: 135px;
-    padding-right: 150px;
-}
-*/
-
-.portfolio-items-wrapper > div {
-  background-color: black;
-  text-align: center;
-  padding: 75px 0;
-  font-size: 20px;
+    padding-right: 163px;
 }
 
-.portfolio-item-1 {
-    position: relative;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    background-image: url(images/coding.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.logo-wrapper img {
+    width: 50%;
+    margin-bottom: 20px;
 }
 
-.portfolio-item-2 {
-    position: relative;
-    grid-column-start: 3;
-    grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 4;
-    background-image: url(images/computer.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.img-text-wrapper .subtitle {
+    transition: 0.5s;
+    font-weight: 600;
+    color: transparent;
 }
 
-.portfolio-item-3 {
-    position: relative;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    background-image: url(images/citynight.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.img-text-wrapper:hover .subtitle {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-weight: 600;
+    color: #f7c705;
 }
 
-.portfolio-item-4 {
-    position: relative;
+/* for completely dark */
+.img-darken {
+    transition: 1s;
+    filter: brightness(0);
 }
 
-.portfolio-item-5 {
-    position: relative;
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row-start: 4;
-    grid-row-end: 7;
-    background-image: url(images/tyler.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.portfolio-item-6 {
-    position: relative;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 5;
-    grid-row-end: 7;
-    background-image: url(images/lamborghini.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.img-blur {
+  transition: 1s;
+  filter: brightness(25%);
 }
 
 /* About Page */
 
 .two-column-wrapper {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
-.profile-items-wrapper {
-  display: grid;
-  grid-template-rows: repeat(6, 1fr);
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 5px;
-  background-color: grey;
-  padding: 5px;
-  color: white;
-}
-
-.profile-items-wrapper > div {
-  background-color: black;
-  text-align: center;
-  padding: 75px 0;
-  font-size: 20px;
+.profile-image-wrapper img {
+  width: 100%;
 }
 
 .profile-content-wrapper {
@@ -199,24 +136,4 @@ body {
 
 .profile-content-wrapper h1 {
     color: #4a49ad;
-}
-
-/* img blur */
-.profile-items-wrapper > div{
-    transition: 0.5s;
-    font-weight: 600;
-    color: transparent;
-}
-
-.profile-items-wrapper > div:hover {
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
-    font-weight: 600;
-    transition: 1s;
-    filter: brightness(45%);
-    color: #f7c705;
-}
-
-.img-blur {
-  transition: 1s;
-  filter: brightness(25%);
 }
