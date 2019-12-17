@@ -31,26 +31,6 @@ body {
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
-.nav-link-wrapper {
-    height: 22px;
-    border-bottow: 1px solid transparent;
-    transition: border-bottom 0.5s;
-}
-
-.nav-link-wrapper a {
-    color: #8a8a8a;
-    text-decoration: none;
-    transition: color 0.5s;
-}
-
-.nav-link-wrapper:hover {
-    border-bottom: 1px solid black;
-}
-
-.nav-link-wrapper a:hover {
-    color: black;
-}
-
 .active-nav-link {
     border-bottom: 1px solid black;
 }
@@ -142,7 +122,7 @@ body {
     background-repeat: no-repeat;
 }
 
-/* About Page */
+/* Two Grids */
 
 .two-column-wrapper {
     display: grid;
@@ -188,4 +168,59 @@ body {
     transition: 1s;
     filter: brightness(45%);
     color: #f7c705;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 900px) {
+
+  body {
+    background-color: #f7c705;
+  }
+
+  .two-column-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+    .profile-items-wrapper {
+      grid-template-rows: repeat(4, 1fr);
+    }
+
+    .profile-item-1 {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+
+    .profile-item-2 {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+
+    .profile-item-3 {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+
+    .profile-item-4 {
+        display: none;
+    }
+
+    .profile-item-6 {
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 6;
+    }
+
+    .profile-item-5 {
+        display: none;
+    }
+
+
 }
