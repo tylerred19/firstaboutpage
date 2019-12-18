@@ -84,7 +84,7 @@ body {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 3;
-    background-image: url(images/image10.jpeg);
+    background-image: url(images/coding.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,7 +96,7 @@ body {
     grid-column-end: 6;
     grid-row-start: 1;
     grid-row-end: 4;
-    background-image: url(images/image02.jpeg);
+    background-image: url(images/computer.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -108,7 +108,7 @@ body {
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 5;
-    background-image: url(images/image08.jpeg);
+    background-image: url(images/citynight.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -136,7 +136,7 @@ body {
     grid-column-end: 4;
     grid-row-start: 5;
     grid-row-end: 7;
-    background-image: url(images/image04.jpeg);
+    background-image: url(images/lamborghini.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
